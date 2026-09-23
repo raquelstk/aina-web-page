@@ -3,6 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google tag (gtag.js). Solo se activa en el dominio de producción, para que las
+         pruebas en local o en GitHub Pages no cuenten como visitas. -->
+    <script>
+      if (/(^|\.)ainabarca\.com$/.test(location.hostname)) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-VZW6C7NG13');
+
+        var gtagScript = document.createElement('script');
+        gtagScript.async = true;
+        gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-VZW6C7NG13';
+        document.head.appendChild(gtagScript);
+      }
+    </script>
     <title>Aina Barca | Educación especial e inclusión en Nepal</title>
     <meta
       name="description"
